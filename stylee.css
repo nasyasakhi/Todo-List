@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+html {
+  overflow-x: hidden;  
+}
+/* Home */
+.head {
+  justify-content: space-between;
+  display: flex;
+  padding: 20px;
+}
+
+.image {
+  width: 220px;
+  height: 50px;
+}
+
+.navbar a {
+  margin-right: 20px;
+  color: #fff;
+  padding: 10px 40px;
+  background: #ff9576;
+  border-radius: 50px;
+  transition: 0.5s ease;
+}
+
+.navbar a:hover {
+  box-shadow: none;
+  background-color: #f15627;
+}
+
+.content {
+  font-size: 3rem;
+  margin-top: 4%;
+}
+
+.content p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+.button {
+  color: #fff;
+  padding: 10px 40px;
+  background: #ff9576;
+  border-radius: 50px;
+  transition: 0.5s ease;
+  font-size: 1.4rem;
+}
+
+.button:hover {
+  background-color: #f15627;
+}
+
+/* profil */
+.poto {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+/* To Do List  */
+.judul {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #f15627;
+}
+
+.container {
+  border-color: #86a789;
+  border-radius: 0.5rem;
+  width: 590px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 30px;
+  padding: 25px 15px; 
+  color: #f15627;
+  background-color: #fac2af;
+  border-radius: 0.5rem;
+}
+
+.tugas {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #d26a4a;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.title i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 13px;
+}
+
+.card {
+  background-color: #ff9576;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input-control {
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 10px;
+}
+::placeholder {
+  color: #f15627;
+  font-size: 13px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #f15627;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.teks-orange {
+  color: green;
+  font-size: 20px;
+}
+.teks-red {
+  color: red;
+  font-size: 20px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+/* Responsif */
+
+@media (max-width: 768px) {
+ .content {
+  font-size: 2.2rem;
+ }
+
+ .content p {
+  font-size: 1.5rem;
+ }
+}
+@media (max-width: 617px) {
+.navbar a {
+  padding: 8px 15px;
+  font-size: 10px;
+}
+
+.image {
+  width: 120px;
+  height: 40px;
+}
+
+.content {
+  font-size: 2rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+}
+
+.hias img {
+ width: 400px;
+}
+
+}
+
+@media (max-width: 450px) {
+
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 95%;
+  }
+
+  .judul {
+    font-size: 40px;
+    justify-content: center;
+  }
+
+  .content {
+    font-size: 1.2rem;
+    
+  }
+  
+  .image {
+    width: 100px;
+  height: 40px;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+
+  .hias img {
+    width: 300px;
+   }
+  
+  .button {
+    font-size: 0.8rem;
+  }
+}
